@@ -31,9 +31,6 @@ echo "The tax is $$tax%.<br>";
 echo "Am I an employee? " . ($employee ? "Yes" : "No") . "<br>";
 echo "Am I online? " . ($online ? "Yes" : "No") .   "<br>";
 echo "Is the item for sale? " . ($for_sale ? "Yes" : "No") . "<br>";
-                                
-
-
 
 
 
