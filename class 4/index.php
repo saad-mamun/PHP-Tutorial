@@ -25,7 +25,7 @@
     <form action="index.php" method="post">
         <label>Quantity:</label><br>
         <input type="text" name="quantity"><br>
-        <button type="submit" value="total">Submit</button>
+        <button type="submit" value="total">Submit to Calculate Total</button>
     </form>
 </body>
 
