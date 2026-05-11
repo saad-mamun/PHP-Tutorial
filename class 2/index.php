@@ -18,7 +18,8 @@ $online = false;
 $for_sale = true;
 
 
-echo "Hello world! My name is $name.<br>";
+// echo "Hello world! My name is $name.<br>";
+echo "Hello world! My name is {$name}. <br>";
 echo "I love {$food}s.<br>";
 echo "You can contact me at $email.<br>";
 
