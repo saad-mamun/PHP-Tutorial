@@ -22,7 +22,11 @@
 $x = $_POST["x"];
 $total = null;
 
-$total = abs($x);
+//$total = abs($x);
+// $total = round($x);
+// $total = floor($x);
+
+
 
 echo $total;
 
