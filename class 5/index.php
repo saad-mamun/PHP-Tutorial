@@ -11,6 +11,10 @@
 <form action="index.php" method="post">
     <label>x:</label>
     <input type="text" name="x" >
+    <label>y:</label>
+    <input type="text" name="y" >
+    <label>z:</label>
+    <input type="text" name="z" >
     <input type="submit" value="total">
 </form>
 </body>
@@ -20,11 +24,19 @@
 <?php
 
 $x = $_POST["x"];
+$y = $_POST["y"];
+$z = $_POST["z"];
+
 $total = null;
 
 //$total = abs($x);
 // $total = round($x);
 // $total = floor($x);
+// $total = ceil($x);
+
+// $total = pow($x, $y);   //power function
+$total = max($x, $y, $z);   //max function
+$total = min($x, $y, $z);   //min function
 
 
 
