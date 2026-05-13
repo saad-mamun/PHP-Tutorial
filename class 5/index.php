@@ -33,11 +33,13 @@ $total = null;
 // $total = round($x);
 // $total = floor($x);
 // $total = ceil($x);
+// $total = sqrt($x);   //square root function
 
 // $total = pow($x, $y);   //power function
-$total = max($x, $y, $z);   //max function
-$total = min($x, $y, $z);   //min function
-
+// $total = max($x, $y, $z);   //max function
+// $total = min($x, $y, $z);   //min function
+// $total = pi();   //pi function
+// $total = rand(100,6000);   //random function
 
 
 echo $total;
