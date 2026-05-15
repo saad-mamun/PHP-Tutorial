@@ -1,8 +1,8 @@
 <?php
 
 //Arithmetic Operators
-$a = 10;
-$b = 5;
+$a = 20;
+$b = 30;
 
 
 echo $a + $b . "<br>"; // Addition
