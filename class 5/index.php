@@ -9,11 +9,11 @@
 
 <body>
 <form action="index.php" method="post">
-    <label>x:</label>
+    <label>X:</label>
     <input type="text" name="x" >
-    <label>y:</label>
+    <label>Y:</label>
     <input type="text" name="y" >
-    <label>z:</label>
+    <label>Z:</label>
     <input type="text" name="z" >
     <input type="submit" value="total">
 </form>
