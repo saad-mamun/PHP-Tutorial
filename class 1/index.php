@@ -1,6 +1,6 @@
 <?php
 echo "Hello world!";
-echo "This is a test.";
+echo "Its my first PHP code.";
 ?>
 
 <!DOCTYPE html>
