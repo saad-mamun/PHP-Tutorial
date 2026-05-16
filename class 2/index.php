@@ -1,7 +1,7 @@
 <?php
 // Variable in PHP..
-$name = "Liton Ali";
-$food = "Pizza";
+$name = "Liton Al Mamun";
+$food = "Burger";
 $email = "deco@gmail.com";
 
 // Integer
