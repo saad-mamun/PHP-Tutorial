@@ -42,7 +42,7 @@
 
 // form 2
 $item = "Pizza";
-$price = 4.99;
+$price = 3.99;
 $quantity = $_POST["quantity"];
 $total = null;
 
