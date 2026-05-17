@@ -5,7 +5,7 @@ $food = "Burger";
 $email = "deco@gmail.com";
 
 // Integer
-$age = 22;
+$age = 20;
 
 // Float
 $gpa = 3.26;
