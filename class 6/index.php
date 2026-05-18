@@ -3,8 +3,14 @@
 // example 1:  of if, elseif and else statement
 
 $age =  20;
-
 $adult = true;
+
+
+$hours = 20;
+$rate = 15;
+$weekly_pay = null;
+
+
 // if($age >= 100){
 //     echo "You are too old to enter this site";
 // }
@@ -23,11 +29,20 @@ $adult = true;
 
 //example 2: of if, elseif and else statement
 
-if($adult){
-    echo "You may enter this site";
-}
-else{
-    echo "You must be 18+ to enter this site";
+// if($adult){
+//     echo "You may enter this site";
+// }
+// else{
+//     echo "You must be 18+ to enter this site";
+// }
+
+// example 3: of if, elseif and else statement
+
+
+
+if($hours <= 40){
+    $weekly_pay = $hours * $rate;
+    echo "Your weekly pay is: $weekly_pay";
 }
 
 
