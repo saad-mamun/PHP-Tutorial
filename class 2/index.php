@@ -2,7 +2,7 @@
 // Variable in PHP..
 $name = "Liton Al Mamun";
 $food = "Burger";
-$email = "deco@gmail.com";
+$email = "deco@gmail.com"; 
 
 // Integer
 $age = 20;
