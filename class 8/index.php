@@ -1,7 +1,9 @@
 <?php
 
 
-$grade = "Fd";
+$grade = "B";
+
+
 
 switch ($grade){
     case "A":
