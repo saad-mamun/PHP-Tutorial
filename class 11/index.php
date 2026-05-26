@@ -11,8 +11,12 @@ $foods = array("Pizza", "Burger", "Pasta", "Salad");
 
 
 // $foods[0] = "Sushi"; 
-// array_push($foods, "Pineapple", "Ice Cream");
-array_pop($foods);
+// array_push($foods, "Pineapple", "Ice Cream"); //add last element
+// array_pop($foods); //remove last element
+// array_shift($foods); //remove first element
+
+// $foods = array_reverse($foods); //reverse array
+// echo count ($foods) . "<br>"; //count array elements
 
 foreach( $foods as $food){
     echo $food . "<br>";
