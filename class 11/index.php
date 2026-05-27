@@ -14,6 +14,7 @@ $foods = array("Pizza", "Burger", "Pasta", "Salad", "Fries");
 // array_push($foods, "Pineapple", "Ice Cream"); //add last element
 // array_pop($foods); //remove last element
 // array_shift($foods); //remove first element
+// array_unshift($foods, "Steak", "Fish"); //add first element
 
 // $foods = array_reverse($foods); //reverse array
 // echo count ($foods) . "<br>"; //count array elements
