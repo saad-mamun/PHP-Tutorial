@@ -40,7 +40,7 @@ $weekly_pay = null;
 
 
 
-if($hours <= 40){
+if($hours <= 35){
     $weekly_pay = $hours * $rate;
     echo "Your weekly pay is: $weekly_pay";
 }
