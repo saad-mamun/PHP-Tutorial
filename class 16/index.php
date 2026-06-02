@@ -24,4 +24,13 @@ happy_birthday("Naima", 23);
 
 
 
+function sum($num1, $num2){
+    $result = $num1 + $num2;
+    return $result;
+}
+$total = sum(10, 20);
+echo "The sum is: $total <br>";
+
+
+
 ?>
