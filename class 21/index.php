@@ -1,5 +1,21 @@
 <?php
+
 session_start();
+
+$loginError = '';
+
+if (isset($_POST['login'])) {
+    
+    if (!empty($_POST['username']) && !empty($_POST['password'])) {
+        $_SESSION['username'] = $_POST['username'];
+        $_SESSION['password'] = $_POST['password'];
+
+        header("Location: home.php");
+        exit;
+    } else {
+        $loginError = "Missing username or password.";
+    }
+}
 
 ?>
 
@@ -11,19 +27,26 @@ session_start();
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Session Example</title>
 </head>
+
 <body>
-    <div>
-        <h1>This is the Log In page</h1>
-        <a href="home.php">Go to Home Page</a>
-    </div>
+    <!-- <div>
+        <h1>This is the Home page</h1>
+        <a href="index.php">Go to Log In Page</a>
+    </div> -->
+
+
+    <!--  for example -->
+    <form action="index.php" method="post">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username"><br><br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password"><br><br>
+        <input type="submit" name="login" value="Log In">
+    </form>
+
+<?php if ($loginError): ?>
+        <p style="color:red;"><?php echo $loginError; ?></p>
+    <?php endif; ?>
 </body>
+
 </html>
-
-<?php
-$_SESSION['username'] = 'Liton Ali';
-$_SESSION['password'] = 'lkdas$45';
-
-echo $_SESSION['username'] . '<br>'; ;
-echo $_SESSION['password'] . '<br>'; ;
-
-?>
