@@ -39,7 +39,7 @@ if(isset($_POST['login'])){
     $age = filter_input(INPUT_POST, 'age', FILTER_VALIDATE_INT);
 
   if(empty($age)){
-    echo "THAT IS NOT A NUMBER";
+    echo "This is not a valid age";
   }else{
     echo "You are {$age} years old";
   }
