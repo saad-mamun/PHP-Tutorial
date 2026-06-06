@@ -1,6 +1,13 @@
 <?php
 session_start();
 
+
+// for example
+if (isset($_POST['logout'])) {
+    session_destroy();
+    header("Location: index.php");
+} 
+
 ?>
 
 <!DOCTYPE html>
@@ -13,17 +20,19 @@ session_start();
 </head>
 
 <body>
-    <div>
         <h1>This is the Home page</h1>
-        <a href="index.php">Go to Log In Page</a>
-    </div>
+    <!--  for example -->
+    <form action="index.php" method="post">
+        <input type="submit" name="logout" value="Log Out">
+    </form>
+
 </body>
 
 </html>
 
 <?php
 
-echo $_SESSION['username'] . '<br>';;
-echo $_SESSION['password'] . '<br>';;
+echo $_SESSION['username'] . '<br>';
+echo $_SESSION['password'] . '<br>';
 
 ?>

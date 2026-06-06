@@ -1,19 +1,19 @@
 <?php
-
 session_start();
 
-$loginError = '';
 
+// for example
 if (isset($_POST['login'])) {
-    
+
+
     if (!empty($_POST['username']) && !empty($_POST['password'])) {
+
         $_SESSION['username'] = $_POST['username'];
         $_SESSION['password'] = $_POST['password'];
 
         header("Location: home.php");
-        exit;
     } else {
-        $loginError = "Missing username or password.";
+        echo "Missing username or password.";
     }
 }
 
@@ -34,7 +34,7 @@ if (isset($_POST['login'])) {
         <a href="index.php">Go to Log In Page</a>
     </div> -->
 
-
+    <h1>This is the log In page</h1>
     <!--  for example -->
     <form action="index.php" method="post">
         <label for="username">Username:</label>
@@ -44,9 +44,19 @@ if (isset($_POST['login'])) {
         <input type="submit" name="login" value="Log In">
     </form>
 
-<?php if ($loginError): ?>
-        <p style="color:red;"><?php echo $loginError; ?></p>
-    <?php endif; ?>
 </body>
 
 </html>
+
+<?php
+// $_SESSION['username'] = 'Liton Ali';
+// $_SESSION['password'] = 'lkdas$45';
+
+// echo $_SESSION['username'] . '<br>';
+// echo $_SESSION['password'] . '<br>';
+
+
+
+
+
+?>
