@@ -18,7 +18,7 @@ function happy_birthday($first_name, $age){
     echo "You are now $age! <br> <br>";
 }
 
-happy_birthday("Liton ", 22);
+happy_birthday("Md_Mamun ", 22);
 happy_birthday("Al_Mamun", 22);
 happy_birthday("Naima", 23);
 
