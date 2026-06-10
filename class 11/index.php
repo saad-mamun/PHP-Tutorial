@@ -2,13 +2,14 @@
 // array
 
 
-$foods = array("Pizza", "Burger", "Pasta", "Salad", "Fries");
+$foods = array("Pizza", "Taco", "Burger", "Pasta", "Salad", "Fries");
 
 // echo $foods[0] . "<br>";
 // echo $foods[1] . "<br>";
 // echo $foods[2] . "<br>";
 // echo $foods[3] . "<br>";
 // echo $foods[4] . "<br>";
+// echo $foods[5] . "<br>";
 
 // $foods[0] = "Sushi"; 
 // array_push($foods, "Pineapple", "Ice Cream"); //add last element
