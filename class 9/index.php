@@ -7,7 +7,7 @@
 </head>
 <body>
     <form action="index.php" method= "post" >
-        <label>Enter a number to count down form:</label>
+        <label>Enter a Number to count down form:</label>
         <input type="text" name= "counter">
         <input type="submit" value= "Start">  
     </form>
