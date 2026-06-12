@@ -3,7 +3,7 @@
 $temp = 20;
 $cloudy = false;
 
-$age = 20;
+$age = 22;
 $citizen = false;
 
 $child = false;
