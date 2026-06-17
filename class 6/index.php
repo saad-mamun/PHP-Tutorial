@@ -7,7 +7,7 @@ $adult = true;
 
 
 $hours = 20;
-$rate = 15;
+$rate = 25;
 $weekly_pay = null;
 
 
