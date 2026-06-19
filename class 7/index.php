@@ -28,7 +28,7 @@ else{
 }
 
 
-if($age >= 19 && $citizen){
+if($age >= 20 && $citizen){
     echo " You can vote. <br>";
 }
 else{
