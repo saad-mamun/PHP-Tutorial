@@ -1,6 +1,6 @@
 <?php
 
-$temp = 20;
+$temp = 19;
 $cloudy = false;
 
 $age = 22;
