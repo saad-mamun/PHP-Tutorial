@@ -1,19 +1,17 @@
 <?php
 
-$child = true;
-$senior = false;
-$ticket = null;
+$grade = "B";
 
-
-if($child || $senior){
-    $ticket = 10;
-    echo "You get a discount $$ticket. <br>";
+switch ($grade) {
+    case "A":
+        echo "Excellent";
+        break;
+    case "B":
+        echo "Good";
+        break;
+    case "C":
+        echo "Fair";
+        break;
+    default:
+        echo "{$grade} is Invalid grade";
 }
-else{
-    $ticket = 15;
-    echo " You pay $$ticket. <br>";
-}
-
-
-
-?>
