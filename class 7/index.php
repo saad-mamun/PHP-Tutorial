@@ -20,6 +20,7 @@ else{
     echo "Weather is bad. <br>";
 }
 
+
 if (!$cloudy ){
     echo "Its cloudy. <br>";
 }

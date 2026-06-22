@@ -1,16 +1,19 @@
 <?php
 
-$age = 30;
+$child = true;
+$senior = false;
+$ticket = null;
 
 
-if($age > 20){
-    echo "You can ride the bike";
-}
-elseif($age == 20){
-    echo "carefully ride the bike";
+if($child || $senior){
+    $ticket = 10;
+    echo "You get a discount $$ticket. <br>";
 }
 else{
-    echo "You cannot ride the bike";
+    $ticket = 15;
+    echo " You pay $$ticket. <br>";
 }
+
+
 
 ?>
