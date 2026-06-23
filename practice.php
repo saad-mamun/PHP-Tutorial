@@ -1,17 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<form action="practice.php" method="post" >
+    <label>Enter a Number:</label><br/>
+    <input type="number" name="number"><br/>
+    <input type="submit" value="Submit"> 
+</form>
+    
+</body>
+</html>
+
+
+
+
 <?php
 
-$grade = "B";
-
-switch ($grade) {
-    case "A":
-        echo "Excellent";
-        break;
-    case "B":
-        echo "Good";
-        break;
-    case "C":
-        echo "Fair";
-        break;
-    default:
-        echo "{$grade} is Invalid grade";
+$counter = $_POST['number'];
+for($i = 0; $i <= $counter; $i++){
+    echo $i . "<br>";
 }
+
+
+
+
