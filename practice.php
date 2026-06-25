@@ -6,26 +6,24 @@
     <title>Document</title>
 </head>
 <body>
-
-<form action="practice.php" method="post" >
-    <label>Enter a Number:</label><br/>
-    <input type="number" name="number"><br/>
-    <input type="submit" value="Submit"> 
-</form>
-    
+    <form action="practice.php" method="post" >
+        <input type="submit" value="Stop" name="stop">
+    </form>
 </body>
 </html>
 
 
 
-
 <?php
 
-$counter = $_POST['number'];
-for($i = 0; $i <= $counter; $i++){
-    echo $i . "<br>";
+$counter = 0;
+
+while($counter < 10){
+    $counter++;
+    echo $counter . "<br>";
 }
 
 
 
 
+?>
