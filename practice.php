@@ -1,14 +1,23 @@
 <?php
 
-$countries = array("USA", "Canada", "Mexico", "Brazil", "Argentina");
+$capitals = array(
+     "Usa" => "Washington D.C.",
+     "Bangladesh" => "Dhaka",
+     "India" => "New Delhi"
+);
 
-foreach( $countries as $country){
-     echo $country . "<br>";
+
+
+$keys = array_keys($capitals);
+foreach ($keys as $key) {
+     echo $key . "<br>";
+}
+echo count($keys) ;
+
+$values = array_values($capitals);
+foreach($values as $value){
+     echo $value . "<br>";
 }
 
-echo $countries[0] . "<br>";
-
-echo $countries[3] . "<br>";
-echo count($countries) . "<br>";
 
 ?>
