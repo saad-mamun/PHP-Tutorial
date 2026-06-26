@@ -8,31 +8,32 @@
 </head>
 
 <body>
+
      <form action="practice.php" method="post">
-          <label>Username: </label><br>
-          <input type="text" name="username" placeholder="Username" ><br>
-          <label>Password: </label><br>
-          <input type="password" name="password" placeholder="Password" ><br>
-          <input type="submit" value="Login" >
+          <input type="radio" name="card" value="Visa"> Visa <br />
+          <input type="radio" name="card" value="BKash"> BKash <br />
+          <input type="radio" name="card" value="Nagad"> Nagad <br />
+          <input type="radio" name="card" value="Rocket"> Rocket <br />
+          <input type="radio" name="card" value="MasterCard"> MasterCard <br />
+          <input type="radio" name="card" value="American Express"> American Express <br />
+          <input type="submit" name="submit" value="Submit Card" >
      </form>
+
 </body>
 
 </html>
 
 <?php
 
-if(isset($_POST['username']) && isset($_POST['password'])){
-     $password = $_POST['password'];
-     $username = $_POST['username'];
 
-     if(!empty($username) || !empty($password)){
-          echo "Username Is: " . $username . "<br>";
-          echo "Password Is: " . $password . "<br>";
+if(isset($_POST['submit'])){
+     if(isset($_POST['card'])){
+          $card = $_POST['card'];
+          echo "You have selected: " . $card . " card <br>";
      }else{
-          echo "Username and Password Can Not be Empty";
-     }
-}else{
-     echo "Fill in the form";
+          echo "Please select a car";
+     };
 }
+
 
 ?>
