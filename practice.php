@@ -10,14 +10,14 @@
 <body>
 
      <form action="practice.php" method="post">
-          <input type="radio" name="card" value="Visa"> Visa <br />
-          <input type="radio" name="card" value="BKash"> BKash <br />
-          <input type="radio" name="card" value="Nagad"> Nagad <br />
-          <input type="radio" name="card" value="Rocket"> Rocket <br />
-          <input type="radio" name="card" value="MasterCard"> MasterCard <br />
-          <input type="radio" name="card" value="American Express"> American Express <br />
-          <input type="submit" name="submit" value="Submit Card" >
+          <input type="radio" name="MobileBank" value="Bkash"> Bkash <br />
+          <input type="radio" name="MobileBank" value="Nagad"> Nagad <br />
+          <input type="radio" name="MobileBank" value="Rocket"> Rocket <br />
+          <input type="radio" name="MobileBank" value="Upai"> Upai <br />
+          <input type="radio" name="MobileBank" value="Fast Pay"> Fast Pay <br />
+          <input type="submit" name="submit" value="Select" >
      </form>
+
 
 </body>
 
@@ -25,15 +25,30 @@
 
 <?php
 
-
 if(isset($_POST['submit'])){
-     if(isset($_POST['card'])){
-          $card = $_POST['card'];
-          echo "You have selected: " . $card . " card <br>";
-     }else{
-          echo "Please select a car";
-     };
+     $MobileBank = null;
+
+     if(isset($_POST['MobileBank'])){
+          $MobileBank = $_POST['MobileBank'];
+     }
+
+     if($MobileBank == "Bkash"){
+          echo "You have selected: " . $MobileBank . "<br>";
+     }
+     if($MobileBank == "Nagad"){
+          echo "You have selected: " . $MobileBank . "<br>";
+     }
+     if($MobileBank == "Rocket"){
+          echo "You have selected: " . $MobileBank . "<br>";
+     }
+     if($MobileBank == "Upai"){
+          echo "You have selected: " . $MobileBank . "<br>";
+     }
+     if($MobileBank == "Fast Pay"){
+          echo "You have selected: " . $MobileBank . "<br>";
+     }
 }
+
 
 
 ?>
