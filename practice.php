@@ -10,13 +10,10 @@
 <body>
 
      <form action="practice.php" method="post">
-          <label>Username:</label><br />
-          <input type="text" name="username" placeholder="Enter your name"><br />
-          <label>Password:</label><br />
-          <input type="password" name="password" placeholder="Enter your password"><br />
-          <label>Age:</label><br />
-          <input type="number" name="age" placeholder="Enter your age"><br /><br />
-          <input type="submit" name="submit" value="Login">
+          <input type="radio" name="MobileBank" value="Bkash"> Bkash <br />
+          <input type="radio" name="MobileBank" value="Nagad"> Nagad <br />
+          <input type="radio" name="MobileBank" value="Rocket"> Rocket <br />
+          <input type="submit" name="submit" value="Select" />
      </form>
 
 
@@ -26,15 +23,20 @@
 
 <?php
 
-if(isset($_POST['submit'])){
-     if( !empty($_POST['username']) && !empty($_POST['password']) && !empty($_POST['age']) ){
-          $username = $_POST['username'];
-          $password = $_POST['password'];
-          $age = $_POST['age'];
-          echo "You are {$username} and you {$age} years old.<br>  Your pass: {$password}";
-          
-     }else{
-          echo "__Please fill up all field";
+if (isset($_POST['submit'])) {
+     $MobileBank = $_POST['MobileBank'] ?? null;
+     switch ($MobileBank) {
+          case ('Bkash'):
+               echo "You have selected Bkash";
+               break;
+          case ('Nagad'):
+               echo "You have selected Nagad";
+               break;
+          case ('Rocket'):
+               echo "You have selected Rocket";
+               break;
+          default:
+               echo " You must select a type of Mobile Bank";
      }
 }
 
