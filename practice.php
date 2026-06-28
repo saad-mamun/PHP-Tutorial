@@ -10,10 +10,11 @@
 <body>
 
      <form action="practice.php" method="post">
-          <input type="radio" name="MobileBank" value="Bkash"> Bkash <br />
-          <input type="radio" name="MobileBank" value="Nagad"> Nagad <br />
-          <input type="radio" name="MobileBank" value="Rocket"> Rocket <br />
-          <input type="submit" name="submit" value="Select" />
+          <input type="checkbox" name="pizza" value="Pizza"> Pizza <br />
+          <input type="checkbox" name="hamburger" value="Hamburger"> Hamburger <br />
+          <input type="checkbox" name="hotdog" value="Hotdog"> Hotdog <br />
+          <input type="checkbox" name="taco" value="Taco"> Taco <br />
+          <input type="submit" name="submit" value="Select Food">
      </form>
 
 
@@ -23,22 +24,20 @@
 
 <?php
 
-if (isset($_POST['submit'])) {
-     $MobileBank = $_POST['MobileBank'] ?? null;
-     switch ($MobileBank) {
-          case ('Bkash'):
-               echo "You have selected Bkash";
-               break;
-          case ('Nagad'):
-               echo "You have selected Nagad";
-               break;
-          case ('Rocket'):
-               echo "You have selected Rocket";
-               break;
-          default:
-               echo " You must select a type of Mobile Bank";
+if(isset($_POST['submit'])){
+     if(isset($_POST['pizza'])){
+          echo " You like Pizza!";
+     }elseif(isset($_POST['hamburger'])){
+          echo "You like Hamburger";
+     }elseif(isset($_POST['hotdog'])){
+          echo "You like Hotdog";
+     }elseif(isset($_POST['taco'])){
+          echo "You like Taco";
+     }else{
+          echo "__Please Select a food";
      }
 }
+
 
 
 ?>
