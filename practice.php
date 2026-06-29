@@ -10,11 +10,11 @@
 <body>
 
      <form action="practice.php" method="post">
-          <input type="checkbox" name="monitor" value="Monitor"> Monitor <br />
-          <input type="checkbox" name="cpu" value="Cpu"> Cpu <br />
-          <input type="checkbox" name="ram" value="RAM"> RAM <br />
-          <input type="checkbox" name="rom" value="ROM"> ROM <br />
-          <input type="submit" name="submit" value="Select Item"> 
+          <input type="checkbox" name="pizza" value="Pizza">Pizza<br>
+          <input type="checkbox" name="hamburger" value="Hamburger">Hamburger<br>
+          <input type="checkbox" name="hotdog" value="Hotdog">Hotdog<br>
+          <input type="checkbox" name="taco" value="Taco">Taco<br>
+          <input type="submit" name="submit" value="Submit">
      </form>
 
 
@@ -24,23 +24,36 @@
 </html>
 
 <?php
+if (isset($_POST['submit'])) {
 
-if(isset($_POST['submit'])){
-     if(isset($_POST['monitor'])){
-          echo "You have select Monitor";
+
+     if (isset($_POST['pizza'])) {
+          echo "You like pizza!<br>";
      }
-     elseif(isset($_POST['cpu'])){
-          echo "You have select CPU";
+     if (isset($_POST['hamburger'])) {
+          echo "You like hamburger!<br>";
      }
-     elseif(isset($_POST['ram'])){
-          echo "You have select RAM";
+     if (isset($_POST['hotdog'])) {
+          echo "You like hotdog!<br>";
      }
-     elseif(isset($_POST['rom'])){
-          echo "You have select ROM";
-     }else{
-          echo "__Please select an item";
+     if (isset($_POST['taco'])) {
+          echo "You like taco!<br>";
+     }
+
+     if (empty($_POST['pizza'])) {
+          echo "You don't like pizza!<br>";
+     }
+     if (empty($_POST['hamburger'])) {
+          echo "You don't like hamburger!<br>";
+     }
+     if (empty($_POST['hotdog'])) {
+          echo "You don't like hotdog!<br>";
+     }
+     if (empty($_POST['taco'])) {
+          echo "You don't like taco!<br>";
      }
 }
+
 
 
 ?>
