@@ -1,12 +1,19 @@
 <?php
-$username = "liton al mamun";
+$name = "liton al mamun";
 
-// $username = str_word_count($username);
-// $username = str_pad($username, 20, "*");
-// $username = str_shuffle($username);
-$username = str_repeat($username, 4);
+// $name = trim($name);
+// $name = strtoupper($name);
+// $name = strtolower($name);
+// $name = strlen($name);
+// $name =ucwords($name);
+// $name= ucfirst($name);
+$name =strpos($name, "al");
+// $name = substr($name,5,15);
+// $name = strrev($name);
+// $name = str_replace($name,"" , "Naima");
+// $name = str_repeat($name, 5);
+// $name = str_shuffle($name);
+// $name = str_pad($name, 20, "*");
+// $name = str_word_count($name);
 
-
-
-
-echo $username;
+echo "My name is: " . $name;
