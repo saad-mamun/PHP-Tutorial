@@ -1,9 +1,11 @@
 <?php
-function name($first_name, $last_name){
-     echo "My name is $first_name $last_name <br>";
+function sum($sum1, $sum2){
+     $result = $sum1 + $sum2;
+     return $result;
 }
-name("Liton", "Al-Mamun");
 
+$total = sum(15,19);
+echo "The sum is: $total <br>";
 
 
 ?>
