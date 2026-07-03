@@ -7,7 +7,7 @@
 </head>
 <body>
     <form action="practice.php" method="post" >
-        <input type="text" name="username" placeholder="Enter your name" ><br>
+        <input type="text" name="name" placeholder="Enter your name" ><br>
         <input type="email" name="email" placeholder="Enter your email"><br>
         <input type="number" name="age" placeholder="Enter your age"><br> 
         <input type="submit" name="login" value="Login"><br>
@@ -17,9 +17,14 @@
 <?php
 
 if(isset($_POST['login'])){
-    $username =$_POST['username'];
-    $email = $_POST['email'];
-    $age = $_POST['age'];
+ 
+    $username = filter_input(INPUT_POST, "name", FILTER_SANITIZE_SPECIAL_CHARS);
+    $email = filter_input(INPUT_POST, "email", FILTER_SANITIZE_EMAIL);
+    $age = filter_input(INPUT_POST, "age", FILTER_SANITIZE_NUMBER_INT);
+    echo "Hello {$username} <br>";
+    echo "Email: {$email} <br>";
+    echo "age: {$age} <br>";
+  
 
-    echo "Hello {$username} <br> Email: {$email} <br>  Age: {$age} ";
+
 }
