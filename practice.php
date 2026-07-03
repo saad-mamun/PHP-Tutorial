@@ -9,7 +9,7 @@
     <form action="practice.php" method="post" >
         <input type="text" name="name" placeholder="Enter your name" ><br>
         <input type="email" name="email" placeholder="Enter your email"><br>
-        <input type="number" name="age" placeholder="Enter your age"><br> 
+   
         <input type="submit" name="login" value="Login"><br>
     </form>
 </body>
@@ -23,8 +23,6 @@ if(isset($_POST['login'])){
     $age = filter_input(INPUT_POST, "age", FILTER_SANITIZE_NUMBER_INT);
     echo "Hello {$username} <br>";
     echo "Email: {$email} <br>";
-    echo "age: {$age} <br>";
-  
 
 
 }
