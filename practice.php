@@ -19,12 +19,11 @@
 
 if(isset($_POST['submit'])){
 
-$username = filter_input(INPUT_POST, "username", FILTER_SANITIZE_SPECIAL_CHARS);
-$email = filter_input(INPUT_POST, "email", FILTER_SANITIZE_EMAIL);
-$age = filter_input(INPUT_POST, "age", FILTER_SANITIZE_NUMBER_INT);
+$email = filter_input(INPUT_POST, 'email', FILTER_VALIDATE_EMAIL);
+$age = filter_input(INPUT_POST, "age", FILTER_VALIDATE_INT);
 
-echo "Hello {$username} <br>";
-echo "Email: {$email} <br>";            
-echo "Age: {$age} <br>";
+if(empty($age)){
+    echo "Please enter a valid age.";
+}
 
 };
