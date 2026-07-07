@@ -1,0 +1,50 @@
+body{
+    box-sizing: border-box;
+    background-color: rgb(228, 226, 223);
+}
+#main-logo{
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.label{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+}
+.inp{
+    outline: none;
+    border-color: aqua;
+    border-radius: 0px 20px ;
+    padding: 10px 20px;
+}
+.submit{
+    outline: none;
+    border-color: aquamarine;
+    border-radius: 0px 20px;
+    padding: 13px 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px ;
+    font-weight: 600;
+    background-color: #12da8a;
+    color: white;
+}
+
+
+.suc-logo{
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+}
+
+.logout{
+    outline: none;
+    color: rgb(243, 243, 243);
+    
+    border-color: aquamarine;
+    border-radius: 0px 20px;
+    padding: 13px 40px;
+    font-size: 20px;
+    font-weight: 500;
+    background-color: crimson;
+}
