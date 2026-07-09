@@ -1,3 +1,3 @@
 <?php
-echo "world is busy"
+echo "Practice make perfect"
 ?>
