@@ -13,7 +13,7 @@ if (isset($_POST['login'])) {
 
         header("Location: home.php");
     } else {
-        echo "Missing username or password.";
+        echo "Missing Username or Password.";
     }
 }
 
