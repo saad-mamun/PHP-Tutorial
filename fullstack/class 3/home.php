@@ -1,15 +1,15 @@
 <?php
 
-$marks =750;
+$marks = 750;
 
 
-if ($marks >= 80){
+if ($marks >= 80) {
     echo "A+";
-}elseif($marks >= 70) {
+} elseif ($marks >= 70) {
     echo "A";
-} elseif($marks >= 60){
+} elseif ($marks >= 60) {
     echo "B";
-}else{
+} else {
     echo "Unknown grade";
 }
 
@@ -20,17 +20,23 @@ echo "<br>";
 
 $marksNested = 67;
 
-if($marksNested<33){
+if ($marksNested < 33) {
     echo "You fail";
-}else{
-    if($marksNested<60 ){
+} else {
+    if ($marksNested < 60) {
         echo "Average";
-    }else{
-        if($marksNested<50){
+    } else {
+        if ($marksNested < 50) {
             echo "D";
         }
     }
 }
+
+
+echo "<br>";
+
+// Nested ternary operator
+
 
 
 
@@ -40,13 +46,38 @@ echo "<br>";
 
 $age = 550;
 
-if ($age > 18){
+if ($age > 18) {
     echo "ADULT";
-}else{
+} else {
     echo "Minor";
 }
 
 echo "<br>";
 
-$minorityCheck = ($age >= 18)? "You are adult" : "You are child";
+$minorityCheck = ($age >= 18) ? "You are adult" : "You are child";
 echo "{$minorityCheck}";
+
+
+echo "<br>";
+
+//switch case
+
+
+$weather = "Rainy";
+
+switch ($weather) {
+    case "Sunny":
+        echo "It's sunny day. Lets have fun";
+        break;
+    case "Cloudy":
+        echo "Its cloudy today.";
+        break;
+    case "Rainy":
+        echo "Its rainy day so take umbrella";
+        break;
+    case "Foggy":
+        echo "Its Foggy day. Have fun";
+        break;
+    default:
+        echo "Unknown Weather";
+}
