@@ -44,13 +44,11 @@ $units = (int)readline();
 
 if ($units <= 100) {
     $bill = $units * 5;
-    echo "Your bill: {$bill}";
 } elseif ($units  <= 200) {
     $bill =  100 * 5 + ($units - 100) * 10;
-    echo "Your bill: {$bill}";
 } elseif ($units  > 200) {
     $bill = (100 * 5) +  (100 * 10) + ($units - 200) * 15;
-    echo "Your bill: {$bill}";
 } else {
     echo "You can not consumed any unite";
 }
+echo "Your total bill: $$bill";
