@@ -18,20 +18,39 @@
 
 // PROJECT: 2 - Basic authentication system..
 
-define("USERNAME", "admin");
-define("PASSWORD", "2315DF");
+// define("USERNAME", "admin");
+// define("PASSWORD", "2315DF");
 
 
-echo "Enter username: ";
-$inputUsername = readline();
+// echo "Enter username: ";
+// $inputUsername = readline();
 
-echo "Enter password: ";
-$inputPassword = readline();
+// echo "Enter password: ";
+// $inputPassword = readline();
 
 
-if( $inputUsername === USERNAME && $inputPassword === PASSWORD  ){
-    echo "Login Successful";
-}else{
-    echo "Invalid username or password";
+// if( $inputUsername === USERNAME && $inputPassword === PASSWORD  ){
+//     echo "Login Successful";
+// }else{
+//     echo "Invalid username or password";
+// }
+
+
+
+// PROJECT: 3 - Electricity bill calculation..
+
+echo "Enter units you consumed: ";
+$units = (int)readline();
+
+if ($units <= 100) {
+    $bill = $units * 5;
+    echo "Your bill: {$bill}";
+} elseif ($units  <= 200) {
+    $bill =  100 * 5 + ($units - 100) * 10;
+    echo "Your bill: {$bill}";
+} elseif ($units  > 200) {
+    $bill = (100 * 5) +  (100 * 10) + ($units - 200) * 15;
+    echo "Your bill: {$bill}";
+} else {
+    echo "You can not consumed any unite";
 }
-
