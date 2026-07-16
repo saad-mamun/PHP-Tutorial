@@ -127,12 +127,25 @@
 // factorial with for loop
 
 // tamo pod ber korar moto hubohu.. jamon 6 tomo pod
-function factWithForLoop($n){
-    $result = 1;
-    for($i = 1; $i <=$n; $i++){
-        $result = $result * $i;
+// function factWithForLoop($n){
+//     $result = 1;
+//     for($i = 1; $i <=$n; $i++){
+//         $result = $result * $i;
+//     }
+//     return $result;
+// }
+// echo factWithForLoop(6);
+
+
+
+// Recursive function
+
+function factWithRec($m)
+{
+    if ($m === 0) {
+        return 1;
     }
+    $result = $m * factWithRec($m - 1);
     return $result;
 }
-echo factWithForLoop(6);
-
+echo factWithRec(5);
