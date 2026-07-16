@@ -110,3 +110,29 @@
 
 
 //Anonymous Function
+// $anFun =  function ($x, $y) {
+//     $z = $x * $y;
+//     return $z;
+// };
+// echo $anFun(2, 5);
+
+
+//Arrow function
+
+// $arrowFn =  fn($x, $y) => $x * $y;
+// echo $arrowFn(50,3);
+
+
+
+// factorial with for loop
+
+// tamo pod ber korar moto hubohu.. jamon 6 tomo pod
+function factWithForLoop($n){
+    $result = 1;
+    for($i = 1; $i <=$n; $i++){
+        $result = $result * $i;
+    }
+    return $result;
+}
+echo factWithForLoop(6);
+
