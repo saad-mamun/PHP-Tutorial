@@ -140,12 +140,27 @@
 
 // Recursive function
 
-function factWithRec($m)
-{
-    if ($m === 0) {
-        return 1;
-    }
-    $result = $m * factWithRec($m - 1);
-    return $result;
-}
-echo factWithRec(5);
+// function factWithRec($m)
+// {
+//     if ($m === 0) {
+//         return 1;
+//     }
+//     $result = $m * factWithRec($m - 1);
+//     return $result;
+// }
+// echo factWithRec(5);
+
+
+//callback function
+
+// function sayHello($name){
+//     return "Hello $name";
+// };
+
+// function greet($callback, $name){
+//     return $callback($name);
+// };
+// echo greet("Say Hello", "Liton");
+
+
+

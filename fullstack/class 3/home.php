@@ -44,7 +44,7 @@ echo "<br>";
 
 //ternary operator
 
-$age = 550;
+$age = 50;
 
 if ($age > 18) {
     echo "ADULT";
