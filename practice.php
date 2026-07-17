@@ -1,16 +1,17 @@
 <?php
 
-echo "Enter you units consumed: ";
-
-$units = (int)readline();
-if($units <= 100){
-    $bill = $units * 5;
-}elseif($units <=200){
-    $bill = (100 * 5) + ($units - 100) * 10;
-}elseif($units <=300){
-    $bill = (100 * 5) + (100 * 10) + ($units - 200) * 15;
-}else{
-    echo "You dost not consumed any units";
+for($x = 1; $x <= 5; $x++){
+    echo $x . " I am sorry \n";
 }
-
-echo "You total bill: " . $bill;
+echo "<br>";
+$i = 1;
+while($i <=5){
+    echo $i . " I love you \n";
+    $i++;
+}
+echo "<br>";
+$n = 1;
+do{
+    echo $n . " Naima you look so beautiful \n";
+    $n ++;
+}while($n <=5);
