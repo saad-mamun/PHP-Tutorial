@@ -92,6 +92,7 @@ $colors = ["red", " greed", " blue", " yellow", " pink", " purple", " white", " 
 
 
 //Array thakle foreach use korte hobe(BEST PRACTICE)
+
 // all colors show korbe..
 
 // foreach($colors as $color){
