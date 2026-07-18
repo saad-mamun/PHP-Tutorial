@@ -1,9 +1,12 @@
 <?php
 
 
-$colors = ["green", "red", "blue", " yellow", " pink", " purple", " white", " black", " lime", " ass"];
-
-
-foreach($colors as $index => $colors){
-    echo $index + 1 . "_" . $colors . "\n";
+function sum($num1, $num2){
+    $result = $num1 ** $num2;
+    return $result;
 }
+
+$sumTest1 = sum(3,3);
+$sumTest2 = sum(2,3);
+$finalResult = $sumTest1 - $sumTest2;
+echo $finalResult;
