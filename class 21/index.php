@@ -30,7 +30,7 @@ if (isset($_POST['login'])) {
 
 <body>
     <!-- <div>
-        <h1>This is the Home page</h1>
+        <h1>This is the Home Page</h1>
         <a href="index.php">Go to Log In Page</a>
     </div> -->
 
