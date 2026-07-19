@@ -87,7 +87,7 @@
 // variableScopeGlobal();
 
 
-
+// PHP Type Hinting
 // function typeHintPri( int $a, float $b, string $c ){
 //     $d = $a + $b;
 //     return "$c result is $d \n";
@@ -161,6 +161,3 @@
 //     return $callback($name);
 // };
 // echo greet("Say Hello", "Liton");
-
-
-

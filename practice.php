@@ -1,14 +1,7 @@
 <?php
 
-function localScope(){
-    $name = "Liton";
-    echo "My name is $name \n";
+function tyHint(int $a, float $b, string $c){
+    $d = $a + $b;
+    return $c . "'s Result is " .$d ."\n";
 }
-localScope();
-
-$name = "Liton Al-Mamun";
-function globalScope(){
-    global $name;
-    echo "My full name is $name \n";
-}
-globalScope();
+echo tyHint(4,0.65,"Naima");
