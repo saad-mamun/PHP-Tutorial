@@ -1,14 +1,14 @@
 <?php
 
-function sum(int $num1, int $num2): int{
-     $result = $num1 + $num2;
-    return $result;
+function localScope(){
+    $name = "Liton";
+    echo "My name is $name \n";
 }
+localScope();
 
-// echo sum(20,20);
-
-function ank(float $num1, float $num2){
-    $result = $num1 + $num2;
-    return $result;
+$name = "Liton Al-Mamun";
+function globalScope(){
+    global $name;
+    echo "My full name is $name \n";
 }
-echo ank(1.5,1.5);
+globalScope();
