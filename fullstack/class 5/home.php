@@ -73,7 +73,7 @@
 
 // foreach loop
 
-$colors = ["red", " greed", " blue", " yellow", " pink", " purple", " white", " black", " lime", " ass"];
+$colors = ["red", " greed", " blue", " yellow", " pink", " purple", " black", " lime", " ass"];
 
 // $blue = $colors[2];
 // echo $blue;
