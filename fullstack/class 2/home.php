@@ -3,7 +3,7 @@
 //find variable memory location
 
 // class Test {
-//     public $name = "liton";
+//     public $name = "luton";
 // }
 
 // $obj = new Test();
