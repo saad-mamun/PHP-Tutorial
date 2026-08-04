@@ -7,7 +7,7 @@
 // }
 
 // $obj = new Test();
-// echo spl_object_id($obj)
+// echo spl_object_id($obj);
 
 
 
