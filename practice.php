@@ -1,11 +1,9 @@
-$i = 1;
-<!-- while($i <= 5){
-    echo $i. "\n";
-    $i++;
-} -->
+$colors = ["red", " greed", " pink", " purple", " black", " lime", " ass"];
 
+foreach($colors as $color){
+    echo $color . "\n";
+}
 
-do{
-    echo $i ."\n";
-    $i++;
-}($i <= 10);
+for($i = 0; $i <= 4; $i++){
+    echo $colors[$i]. "\n";
+}
