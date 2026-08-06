@@ -1,9 +1,17 @@
-$colors = ["red", " greed", " pink", " purple", " black", " lime", " ass"];
+<?php
 
-foreach($colors as $color){
-    echo $color . "\n";
-}
+define("USERNAME", "admin");
+define("PASSWORD", "1234");
 
-for($i = 0; $i <= 4; $i++){
-    echo $colors[$i]. "\n";
+
+echo "Enter username: ";
+$inputUsername = readline();
+
+echo "Enter password: ";
+$inputPassword = readline();
+
+if( $inputUsername === USERNAME && $inputPassword ===PASSWORD){
+    echo "Login Successful";
+}else{
+    echo "Invalid username or password";
 }
