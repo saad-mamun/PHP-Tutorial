@@ -1,17 +1,16 @@
 <?php
 
-define("USERNAME", "admin");
-define("PASSWORD", "1234");
+echo "Enter you unites: ";
+$unites = (int)readline();
 
 
-echo "Enter username: ";
-$inputUsername = readline();
-
-echo "Enter password: ";
-$inputPassword = readline();
-
-if( $inputUsername === USERNAME && $inputPassword ===PASSWORD){
-    echo "Login Successful";
+if($unites <= 100){
+    $bill = $unites * 5;
+} elseif($unites <= 200){
+    $bill = 100 * 5 + ($unites - 100) * 10;
+}elseif($unites > 200){
+    $bill = (100 * 5) + (100* 10) + ($unites - 200) * 15;
 }else{
-    echo "Invalid username or password";
+    echo "You can not consumed any unite";
 }
+echo "Your bill is: $" .$bill;
