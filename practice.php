@@ -1,20 +1,16 @@
 <?php
 
-$colors = ["red", "green", "blue", "yellow", "pink", "purple", "black", "lime", "orange"];
-
-$numbers = [1,2,3,4,5,6,7];
-
-for($i = 0; $i <= 5; $i++){
-    if($i == 3){
-        break;
-    }
-    echo $i . "\n";
+function sum($n1, $n2){
+    $result = $n1 + $n2;
+    return $result;
 }
 
+$totalSum = sum(23,22);
+// echo $totalSum;
 
-for($i = 0; $i <= 5; $i++){
-    if($i == 3){
-        continue;
-    }
-    echo $i . "\n";
+
+function greeting($name = "Sir"){
+    echo "Welcome $name";
 }
+// greeting(); 
+greeting("Naima");
