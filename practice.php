@@ -2,20 +2,19 @@
 
 $colors = ["red", "green", "blue", "yellow", "pink", "purple", "black", "lime", "orange"];
 
+$numbers = [1,2,3,4,5,6,7];
 
-for($i = 0; $i < count($colors); $i++){
-    // echo "Colors name is: " . $colors[$i]. "\n";
+for($i = 0; $i <= 5; $i++){
+    if($i == 3){
+        break;
+    }
+    echo $i . "\n";
 }
 
-foreach($colors as $color){
-    // echo $color . "\n";
-};
 
-foreach($colors as $index => $color){
-//   echo $index . " - " . $color ."\n" ;  
-};
-
-
-foreach($colors as $index => $color){
-    echo $index + 1 . " - ". $color . "\n";
+for($i = 0; $i <= 5; $i++){
+    if($i == 3){
+        continue;
+    }
+    echo $i . "\n";
 }
