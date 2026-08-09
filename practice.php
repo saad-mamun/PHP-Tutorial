@@ -1,16 +1,8 @@
 <?php
 
-function sum($n1, $n2){
-    $result = $n1 + $n2;
+function sum(...$nums){
+    $result = array_sum($nums);
     return $result;
 }
 
-$totalSum = sum(23,22);
-// echo $totalSum;
-
-
-function greeting($name = "Sir"){
-    echo "Welcome $name";
-}
-// greeting(); 
-greeting("Naima");
+echo sum(10,20,30,40);
