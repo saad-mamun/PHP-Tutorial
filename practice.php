@@ -1,16 +1,15 @@
 <?php
 
 
-function sumOfInt (int $num1, int $num2) : int{
-    $result = $num1 + $num2;
-    return $result;
+function localt(){
+    $name = "liton";
+    echo "My name is $name \n";
 }
-echo sumOfInt(10,20.5);
-echo "</br>";
+localt();
 
-function sumOfFloat(float $num1, float $num2) : float{
-    $result = $num1 + $num2;
-    return $result;
+$name = "Liton Al Mamun";
+function globalScope(){
+    global $name;
+    echo "My name is $name";
 }
-
-echo sumOfFloat(12.2,2.3);
+globalScope();
