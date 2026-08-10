@@ -6,11 +6,36 @@ $questions = [
     ['question' => "Who wrote Hamlet?", "Correct " => "Shakespeare"]
 ];
 
-$numbers = [
-    'First_element' => 1,
-    'Other_element' => 5,
-    'Second_element' => 2,
-    'Third_element' => 3
-];
+$answers = [];
 
-echo $numbers['Second_element'];
+
+foreach ($questions as $index => $question) {
+    echo ($index + 1) . ". " . $question['question'] . "\n";
+    $answers[] = trim(readline("Your Answer: "));
+}
+
+//Evaluate function
+function evaluateQuiz(array $questions, array $answers): int
+{
+    $score = 0;
+    foreach ($questions as $index => $question) {
+        if ($answers[$index] === $question[$index]) {
+            $score++;
+        }
+    }
+    return $score;
+};
+
+
+// Calculate score
+$score = evaluateQuiz($questions, $answers);
+
+echo "\n you scored $score out of " . count($questions) . ".\n" ;
+
+if($score === count($questions)){
+    echo "Excellent job \n ";
+}elseif($score > 1){
+    echo "Good effort \n";
+}else{
+    "Better luck next time \n";
+}
