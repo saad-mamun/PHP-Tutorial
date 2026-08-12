@@ -46,7 +46,7 @@ echo $array1[1][2];
 
 
 //Associative Multidimensional array....
-$array1 = [
+$users = [
     "John" => [
         "email" => "john@gmail.com",
         "age" => 23,
@@ -59,9 +59,40 @@ $array1 = [
     ]
 ];
 
-// print_r($array1["Jane"]);
-// print_r($array1["Jane"]["age"]);
+// print_r($users["Jane"]);
+// print_r($users["Jane"]["age"]);
 
 //easy way to access
-$jane = $array1["Jane"];
+$jane = $users["Jane"];
 print_r($jane["age"]);
+
+
+
+
+
+// $users = [
+//     "John" => [
+//         "email" => "john@gmail.com",
+//         "age" => 23,
+
+//     ],
+//     "Jane" => [
+//         "email" => "Jane@gmail.com",
+//         "age" => 25,
+
+//     ],
+//     "Naima" => [
+//         "email" => "naima@gmail.com",
+//         "age" => 24,
+
+//     ]
+// ];
+
+// foreach($users as $username => $details ){
+//     // print_r($details);
+//     echo "Username: $username \n";
+//     foreach($details as $key => $value){
+//         echo "$key : $value \n";
+//     }
+// };
+
