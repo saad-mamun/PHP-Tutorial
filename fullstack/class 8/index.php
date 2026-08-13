@@ -186,3 +186,25 @@ if(in_array(3, $numbers)){
 }else{
   echo  "The number you have selected. That would not exist in this array.";
 }
+
+
+// key search
+$assoc = array(
+    "first" => "apple",
+    "second" => "banana"
+);
+
+if(array_key_exists("first", $assoc)){
+    echo "key exists";
+}else {
+    echo "dose not exists";
+}
+
+// value search
+$assoc = array(
+    "first" => "apple",
+    "second" => "banana"
+);
+
+$value = array_search("banana", $assoc);
+echo $value;
