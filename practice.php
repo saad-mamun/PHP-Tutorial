@@ -1,12 +1,19 @@
 <?php
 
-// removing a portion from an array and also adding new elements
+// Array Informations;
 
-$fruits = array("apple", "banana", "cherry");
-// array_splice($fruits, 1,1);
-array_splice($fruits, 1,2);
-print_r($fruits);
+$numbers = array(1,2,3,4,5);
+// echo count($numbers) . "\n" ;
+// echo array_sum($numbers);
 
-// adding new elements
-// array_splice($fruits, 1,2, array("apricot", "blackberry"));
-// print_r($fruits);
+//protek tar sahter protek ta gun hobe..
+// echo array_product($numbers);
+
+
+//important
+// value chack kore ache ki na
+if(in_array(3, $numbers)){
+    echo "3 is in array.\n";
+}else{
+  echo  "The number you have selected. That would not exist in this array.";
+}
