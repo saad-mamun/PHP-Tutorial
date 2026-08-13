@@ -181,30 +181,80 @@ $numbers = array(1,2,3,4,5);
 
 //important
 // value chack kore ache ki na
-if(in_array(3, $numbers)){
-    echo "3 is in array.\n";
-}else{
-  echo  "The number you have selected. That would not exist in this array.";
-}
+// if(in_array(3, $numbers)){
+//     echo "3 is in array.\n";
+// }else{
+//   echo  "The number you have selected. That would not exist in this array.";
+// }
 
 
 // key search
-$assoc = array(
-    "first" => "apple",
-    "second" => "banana"
-);
+// $assoc = array(
+//     "first" => "apple",
+//     "second" => "banana"
+// );
 
-if(array_key_exists("first", $assoc)){
-    echo "key exists";
-}else {
-    echo "dose not exists";
-}
+// if(array_key_exists("first", $assoc)){
+//     echo "key exists";
+// }else {
+//     echo "dose not exists";
+// }
 
 // value search
-$assoc = array(
-    "first" => "apple",
-    "second" => "banana"
-);
+// $assoc = array(
+//     "first" => "apple",
+//     "second" => "banana"
+// );
 
-$value = array_search("banana", $assoc);
-echo $value;
+// $value = array_search("banana", $assoc);
+// echo $value;
+
+
+
+//array map
+// function squired($n){
+//     return $n * $n;
+// }
+
+// $numbers = array(1,2,3,4,5);
+// $numberOfSquired = array_map("squired", $numbers);
+// print_r($numberOfSquired);
+
+
+//array_ filter
+// function is_even($n){
+//     return $n % 2 == 0;
+// }
+
+// $numbers = array(1,2,3,4,5);
+// $evenNumbers = array_filter($numbers, "is_even");
+// print_r($evenNumbers);
+
+
+//array_merge
+// $array1 = array("Apple", "Banana");
+// $array2 = array("Orange", "Mango");
+
+// $merged = array_merge($array1, $array2);
+// print_r($merged);
+
+//array_replace
+// $array1 = array("Apple", "Banana", "Orange");
+
+// $replacedArray = array(0 => "Apricot", 1 => "Blackberry");
+// $replaced = array_replace($array1  ,$replacedArray);
+// print_r($replaced);
+
+
+//array_flip
+// $input = array("a" => 1, 'b' => 2, 'c' => 3);
+// $flipped = array_flip($input);
+// print_r($flipped);
+
+
+//array_change_key_case
+// $input = array("First" => 1, 'secONd' => 2, );
+// $KeyChange = array_change_key_case($input, CASE_UPPER);
+// print_r($KeyChange);
+
+
