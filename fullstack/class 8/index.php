@@ -118,3 +118,45 @@ print_r($keys);
 //array fill.....
 $filled = array_fill(0,3, "Apple");
 print_r($filled);
+
+
+//insert element at the end
+
+$fruits = array("apple", "banana", "cherry");
+print_r($fruits);
+array_push( $fruits, "dates", "elderberry");
+print_r($fruits);
+
+
+//remove element at the end
+
+// $fruits = array("apple", "banana", "cherry");
+// $lastFruit =  array_pop($fruits);
+// print_r($fruits);
+// // je element remove hoyse ta check kora jai
+// echo $lastFruit;
+
+
+
+//insert element from the SURU
+$fruits = array("apple", "banana", "cherry");
+$lastFruit =  array_unshift($fruits, "Dates");
+print_r($fruits);
+
+//remove element suru theke
+$fruits = array("apple", "banana", "cherry");
+$lastFruit =  array_shift($fruits);
+print_r($fruits);
+
+
+
+// removing a portion from an array and also adding new elements
+
+$fruits = array("apple", "banana", "cherry");
+// array_splice($fruits, 1,1);
+array_splice($fruits, 1,2);
+print_r($fruits);
+
+// adding new elements
+// array_splice($fruits, 1,2, array("apricot", "blackberry"));
+// print_r($fruits);
