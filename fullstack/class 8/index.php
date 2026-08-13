@@ -96,3 +96,25 @@ print_r($jane["age"]);
 //     }
 // };
 
+
+
+// array values
+
+$assoc = array("a" => "apple", "b" => "banana", "c" => "cherry");
+$values = array_values($assoc);
+print_r($values);
+$keys = array_keys($assoc);
+print_r($keys);
+
+
+// array combine....
+
+// $keys = array("a", "b", "c");
+// $values = array("apple", "banana", "cherry");
+// $combined = array_combine($keys, $values);
+// print_r($combined);
+
+
+//array fill.....
+$filled = array_fill(0,3, "Apple");
+print_r($filled);
