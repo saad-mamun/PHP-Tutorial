@@ -258,3 +258,138 @@ $numbers = array(1,2,3,4,5);
 // print_r($KeyChange);
 
 
+
+// array_column
+// $records = array(
+//     array(
+//         'id' => 2135,
+//         'first_name' => 'John',
+//         'last_name' => 'Doe',
+//     ),
+//     array(
+//         'id' => 3245,
+//         'first_name' => 'Sally',
+//         'last_name' => 'Smith',
+//     ),
+//     array(
+//         'id' => 5342,
+//         'first_name' => 'Jane',
+//         'last_name' => 'Jones',
+//     ),
+//     array(
+//         'id' => 5623,
+//         'first_name' => 'Peter',
+//         'last_name' => 'Doe',
+//     )
+// );
+
+// $firstName = array_column($records, 'first_name');
+// print_r($firstName);
+
+
+
+//sort - choto theke boro
+// $numbers = array(3,2,5,7,6,1);
+// // sort($numbers);
+// // print_r($numbers);
+
+// //rsort - boro theke choto
+// rsort($numbers);
+// print_r($numbers);
+
+
+//alphbet letter a kaj kore..
+
+// $fruits = array("key1" => "Lemon", "key2" => "Orange", "Key3" => "Banana");
+// //asort - associative array er modhe kaj kore..
+// asort($fruits);
+// print_r($fruits);
+
+// $fruits = array("key1" => "Lemon", "key2" => "Orange", "Key3" => "Banana");
+// //asort - associative array er modhe kaj kore..
+// arsort($fruits);
+// print_r($fruits);
+
+// $fruits = array("d" => "Lemon", "b" => "Orange", "p" => "Banana");
+// //ksort - key anujai sajai
+// ksort($fruits);
+// print_r($fruits);
+
+// $fruits = array("d" => "Lemon", "b" => "Orange", "p" => "Banana");
+// //ksort - key anujai sajai
+// krsort($fruits);
+// print_r($fruits);
+
+
+
+//Natural Order Algorithm Sort
+// $files = array("img1,png", "img20.png", "img12.png", "img2.png");
+// natsort($files);
+// print_r($files);
+
+
+//Natural Order Algorithm Sort
+// $files = array("Img1,png", "IMg20.png", "Img12.png", "img2.png");
+// natcasesort($files);
+// print_r($files);
+
+
+//uasort - user er data jonno kaj kore
+// $peoples = array("Peter" => 30, "Naima" => 24, "Mamun" => 23);
+// function ageComparator($a, $b){
+//     return $a - $b;
+// }
+// uasort($peoples, "ageComparator");
+// print_r($peoples);
+
+
+//uksort - user er key anujai data show kore
+// $peoples = array("Aysha" => 22, "Naima" => 24, "Mamun" => 23);
+// function ageComparator($a, $b){
+//     return $a <=> $b;
+// }
+// uksort($peoples, "ageComparator");
+// print_r($peoples);
+
+
+
+// Nicher gulo khub use hoyna
+
+// array_walk
+// $fruits = ["apple", "banana", "orange"];
+// function test_alter(&$item, $key, $prefix){
+//     $item = "$prefix: $item";
+// }
+// array_walk($fruits, "test_alter", "fruit");
+// print_r($fruits);
+
+
+// array_walk_recursive
+// $sweet = array('a' => "apple", 'b' => array('p' => 'pear', 'c' => "cherry"));
+
+// function array_key_recursive($array, $callback) {
+//     foreach ($array as $key => $value) {
+//         if (is_array($value)) {
+//             array_key_recursive($value, $callback);
+//         } else {
+//             $callback($value, $key);
+//         }
+//     }
+// }
+
+// function test_print($item, $key) {
+//     echo "$key holds $item \n";
+// }
+
+// array_key_recursive($sweet, "test_print");
+
+
+
+// SOB gulor jogfol othob single value return korbe
+// $numbers = array(1,2,3);
+// function sum($carry, $item){
+//     $carry += $item;
+//     return $carry;
+// };
+// $result = array_reduce($numbers, 'sum');
+// echo $result;
