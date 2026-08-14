@@ -1,37 +1,32 @@
 <?php
 
-$questions = [
-    ['question' => 'What is 2 + 2? ', 'correct' => "4"],
-    ['question' => 'What is capital of Bangladesh? ', 'correct' => "Dhaka"],
-    ['question' => 'My post code? ', 'correct' => "6320"],
+$array = [1, 2, 3, 4, 5, 6];
+
+$person = array(
+    'first_name' => "Liton",
+    'last_name' => " Al-Mamun",
+    'age' => 24
+);
+
+$person1 = array(
+    array(1, 2, 3),
+    array(4, 5, 6),
+    array(7, 8, 9),
+);
+
+$users = [
+    "john" => [
+        "email" => "naima@gmail.com",
+        "age" => "24",
+    ],
+    "jane" => [
+        "email" => "jane@gmail.com",
+        "age" => "44",
+    ],
 ];
 
-$answers = [];
-
-foreach ($questions as $index => $question) {
-    echo ($index + 1) . ". " . $question['question'];
-    $answers[] = trim(readline("Your answer: "));
-};
-
-function evaluateQuiz(array $questions, array $answers): int
-{
-    $score = 0;
-    foreach ($questions as $index => $question) {
-        if ($answers[$index] === $question['correct']) {
-            $score++;
-        }
+foreach ($users as $user => $details) {
+    foreach($details as $key => $value ){
+        echo "$key : $value \n " ;
     }
-    return  $score;
-};
-
-
-$score = evaluateQuiz($questions, $answers);
-echo "You scored $score out of " . count($questions). " .\n";
-
-if($score ===count($questions)){
-    echo "Exellent job \n ";
-}elseif($score > 1){
-    echo "Good Effort \n";
-}else{
-    echo "Better luck next time \n";
-}
+;}
