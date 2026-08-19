@@ -1,6 +1,6 @@
 <?php
 
-$fruits = ["apple", "banana", "orange", "grape", "kiwi"];
-
-$portion = array_splice($fruits, 1, 2, );
-print_r($portion);
+$numbers = array(1,2,3,4,5);
+echo count($numbers);
+echo array_sum($numbers);
+echo array_product($numbers);
