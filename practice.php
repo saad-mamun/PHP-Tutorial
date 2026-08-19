@@ -1,6 +1,17 @@
 <?php
 
-$numbers = array(1,2,3,4,5);
-echo count($numbers);
-echo array_sum($numbers);
-echo array_product($numbers);
+
+$assoc = array(
+    "first" => "apple",
+    "second" => "banana"
+);
+
+// if(array_key_exists("second", $assoc)){
+//     echo "This key exist \n";
+// }else{
+//     echo "Key dose not exist \n";
+// }
+
+
+$value = array_search('banana', $assoc);
+echo $value;
