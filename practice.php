@@ -1,12 +1,6 @@
 <?php
 
 
-$array1 = array("Apple", "Banana");
-$array2 = array("Orange", "Mango");
-
-$merged = array_merge($array1, $array2);
-// print_r($merged);
-
-$arrayReplace = array(0 => "Apricot", 1 => "Blackberry");
-$replaced = array_replace($array1, $arrayReplace);
-print_r($replaced);
+$input = array("First" => 0, "SecONd" => 1);
+$keyChanged = array_change_key_case($input, CASE_LOWER);
+print_r($keyChanged);
