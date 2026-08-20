@@ -1,17 +1,10 @@
 <?php
 
 
-$assoc = array(
-    "first" => "apple",
-    "second" => "banana"
-);
+function squired($n){
+    return $n * $n;
+};
 
-// if(array_key_exists("second", $assoc)){
-//     echo "This key exist \n";
-// }else{
-//     echo "Key dose not exist \n";
-// }
-
-
-$value = array_search('banana', $assoc);
-echo $value;
+$numbers = array(1,2,3,4,5);
+$numberOfSquired = array_map("squired", $numbers);
+print_r($numberOfSquired);
