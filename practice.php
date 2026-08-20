@@ -1,10 +1,12 @@
 <?php
 
 
-function squired($n){
-    return $n * $n;
-};
+$array1 = array("Apple", "Banana");
+$array2 = array("Orange", "Mango");
 
-$numbers = array(1,2,3,4,5);
-$numberOfSquired = array_map("squired", $numbers);
-print_r($numberOfSquired);
+$merged = array_merge($array1, $array2);
+// print_r($merged);
+
+$arrayReplace = array(0 => "Apricot", 1 => "Blackberry");
+$replaced = array_replace($array1, $arrayReplace);
+print_r($replaced);
