@@ -1,6 +1,7 @@
 <?php
 
 
-$numbers = array(1,5,7,4,6,3);
-rsort($numbers);
-print_r($numbers);
+$fruits = array("key1" => "Lemon", "Key2" => "Orange", "Key3" => "Banana");
+
+arsort($fruits);
+print_r($fruits);
