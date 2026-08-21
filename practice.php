@@ -1,7 +1,10 @@
 <?php
 
 
-$fruits = array("key1" => "Lemon", "Key2" => "Orange", "Key3" => "Banana");
+$fruits = array("a" => "Lemon", "e" => "Orange", "b" => "Banana");
 
-arsort($fruits);
+// ksort($fruits);
+// print_r($fruits);
+
+krsort($fruits);
 print_r($fruits);
