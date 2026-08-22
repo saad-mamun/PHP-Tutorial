@@ -1,10 +1,5 @@
 <?php
 
 
-$fruits = array("a" => "Lemon", "e" => "Orange", "b" => "Banana");
+$name = "hello, I am Liton";
 
-// ksort($fruits);
-// print_r($fruits);
-
-krsort($fruits);
-print_r($fruits);

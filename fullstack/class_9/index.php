@@ -16,4 +16,14 @@ $length = strlen($name);
 
 // echo str_replace( "Liton", "Naima", $name);
 
-echo strtolower($name);
+// echo strtolower($name);
+
+
+
+// echo ucfirst($name);
+// echo ucwords($name);
+
+// $firstName = "  Liton   ";
+// $lastName = "  Al_Mamun  ";
+// $fullName = "I am $firstName $lastName";
+// echo trim($fullName);

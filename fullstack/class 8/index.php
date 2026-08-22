@@ -323,7 +323,7 @@ $numbers = array(1,2,3,4,5);
 
 
 //Natural Order Algorithm Sort
-// $files = array("img1,png", "img20.png", "img12.png", "img2.png");
+// $files = array("img1.png", "img20.png", "img12.png", "img2.png");
 // natsort($files);
 // print_r($files);
 
