@@ -27,3 +27,7 @@ $length = strlen($name);
 // $lastName = "  Al_Mamun  ";
 // $fullName = "I am $firstName $lastName";
 // echo trim($fullName);
+
+//important - hash kore md5 dia
+// $password = "MilonHardware@32315}";
+// echo md5($password);
