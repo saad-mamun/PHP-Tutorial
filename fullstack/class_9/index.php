@@ -1,8 +1,8 @@
 <?php
 
-$name = "Hello, I am Liton";
+// $name = "Hello, I am Liton";
 
-$length = strlen($name);
+// $length = strlen($name);
 
 // echo $length;
 
@@ -35,34 +35,40 @@ $length = strlen($name);
 
 // FILE-
 // 
-$file = "example.text";
-$content = "This is text content for example file";
+// $file = "example.text";
+// $content = "This is text content for example file";
 
-if (file_put_contents($file, $content)) {
-    echo "File created successfully \n";
-} else {
-    echo "Failed to create File \n";
-}
+// if (file_put_contents($file, $content)) {
+//     echo "File created successfully \n";
+// } else {
+//     echo "Failed to create File \n";
+// }
 
 // Athoba...
 
 // By using fopen() and fwrite() functions;
 
-$fileTwo = "second-file.txt";
-// w-means write
-$handle = fopen($fileTwo, 'w');
+// $fileTwo = "second-file.txt";
+// // w-means write
+// $handle = fopen($fileTwo, 'w');
 
-if ($handle) {
-    fwrite($handle, "Hello I am second file");
-    fclose($handle);
-    echo "Second file created successfully \n";
-} else {
-    echo "Failed \n";
-}
+// if ($handle) {
+//     fwrite($handle, "Hello I am second file");
+//     fclose($handle);
+//     echo "Second file created successfully \n";
+// } else {
+//     echo "Failed \n";
+// }
 
-if (file_exists('testFILE.txt')) {
-    $content = file_get_contents('testFILE.txt');
-    echo $content . "\n";
-} else {
-    echo "File dose not exist\n";
+// if (file_exists('testFILE.txt')) {
+//     $content = file_get_contents('testFILE.txt');
+//     echo $content . "\n";
+// } else {
+//     echo "File dose not exist\n";
+// }
+
+
+
+if(file_put_contents('example2.txt', "I am liton from content(argument)")){
+    echo "File written successfully \n";
 }
