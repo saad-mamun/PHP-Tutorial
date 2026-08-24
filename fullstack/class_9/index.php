@@ -69,8 +69,42 @@
 
 
 
-$fileDataUpdate = "This is updated content for example file \n I am liton from content";
+// update data
 
-if(file_put_contents('example2.txt', $fileDataUpdate)){
-    echo "File written successfully \n";
-}
+// $fileDataUpdate = "This is updated content for example file \n I am liton from content";
+
+// if(file_put_contents('example2.txt', $fileDataUpdate)){
+//     echo "File written successfully \n";
+// }
+
+
+
+
+// //append
+
+// $fileAppend = 'example2.txt';
+// $content = " Mamun, Naima, Purnima, Sathi" ;
+
+// if(file_put_contents($fileAppend, $content, FILE_APPEND)){
+//     echo "Successfully append" ;
+// }else{
+//     echo "Append fail";
+// }
+
+
+//delete
+
+// $fileDelete = 'example4.txt';
+// //shortcut
+// // unlink()
+
+// // Best practice
+// if(file_exists($fileDelete)){
+//     if(unlink($fileDelete)){
+//         echo "Fill deleted";
+//     }else{
+//         echo "failed to delete";
+//     }
+// }else{
+//     echo "File dose not exists";
+// }
