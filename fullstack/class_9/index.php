@@ -69,6 +69,8 @@
 
 
 
-if(file_put_contents('example2.txt', "I am liton from content(argument)")){
+$fileDataUpdate = "This is updated content for example file \n I am liton from content";
+
+if(file_put_contents('example2.txt', $fileDataUpdate)){
     echo "File written successfully \n";
 }
