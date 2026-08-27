@@ -45,5 +45,5 @@ if(is_dir($deleteEmptyDir)){
         echo "Failed to delete";
     }
 }else{
-    echo "Not found";
+    echo "Folder Not found";
 }
