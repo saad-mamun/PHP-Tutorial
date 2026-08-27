@@ -42,7 +42,7 @@ if(is_dir($deleteEmptyDir)){
     if(rmdir($deleteEmptyDir)){
         echo "Folder successfully deleted";
     }else{
-        echo "Failed";
+        echo "Failed to delete";
     }
 }else{
     echo "Not found";
