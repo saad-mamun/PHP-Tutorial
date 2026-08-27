@@ -12,7 +12,7 @@ $folderName = "Students";
 //         echo "Failed to create folder" ;
 //     }
 // }else{
-//     echo "folder already exists";
+//     echo "folder already exist";
 // };
 
 
