@@ -23,7 +23,7 @@
 // echo ucfirst($name);
 // echo ucwords($name);
 
-// $firstName = "  Liton   ";
+// $firstName = "  Liton Ali   ";
 // $lastName = "  Al_Mamun  ";
 // $fullName = "I am $firstName $lastName";
 // echo trim($fullName);
