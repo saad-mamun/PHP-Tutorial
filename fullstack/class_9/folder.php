@@ -49,18 +49,21 @@ $folderName = "Students";
 // }
 
 
+
+
+// folder er modhe file create korte hobe
 // folder with content delete
-$dFolderName = 'TestAgain';
-if (is_dir($dFolderName)) {
-    $dFiles = array_diff(scandir($dFolderName), ['.', '..']);
-    foreach ($dFiles as $file) {
-        $path = "$dFolderName/$file";
-        if (unlink($path)) {
-            echo "Successfully Deleted: $file\n";
-        } else {
-            echo "Failed to delete: $file\n";
-        }
-    }
-} else {
-    echo "Directory '$dFolderName' does not exist.\n";
-}
+// $dFolderName = 'TestAgain';
+// if (is_dir($dFolderName)) {
+//     $dFiles = array_diff(scandir($dFolderName), ['.', '..']);
+//     foreach ($dFiles as $file) {
+//         $path = "$dFolderName/$file";
+//         if (unlink($path)) {
+//             echo "Successfully Deleted: $file\n";
+//         } else {
+//             echo "Failed to delete: $file\n";
+//         }
+//     }
+// } else {
+//     echo "Directory '$dFolderName' does not exist.\n";
+// }
