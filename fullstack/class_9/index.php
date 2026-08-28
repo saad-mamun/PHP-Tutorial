@@ -106,7 +106,7 @@
 //         echo "failed to delete";
 //     }
 // }else{
-//     echo "File dose not exists";
+//     echo "File dose not exist";
 // }
 
 

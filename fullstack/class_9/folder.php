@@ -37,13 +37,30 @@ $folderName = "Students";
 //     echo "Failed to create folder";
 // }
 
-$deleteEmptyDir = 'Test_dir';
-if(is_dir($deleteEmptyDir)){
-    if(rmdir($deleteEmptyDir)){
-        echo "Folder successfully deleted";
-    }else{
-        echo "Failed to delete";
+// $deleteEmptyDir = 'Test_dir';
+// if(is_dir($deleteEmptyDir)){
+//     if(rmdir($deleteEmptyDir)){
+//         echo "Folder successfully deleted";
+//     }else{
+//         echo "Failed to delete";
+//     }
+// }else{
+//     echo "Folder Not found";
+// }
+
+
+// folder with content delete
+$dFolderName = 'TestAgain';
+if (is_dir($dFolderName)) {
+    $dFiles = array_diff(scandir($dFolderName), ['.', '..']);
+    foreach ($dFiles as $file) {
+        $path = "$dFolderName/$file";
+        if (unlink($path)) {
+            echo "Successfully Deleted: $file\n";
+        } else {
+            echo "Failed to delete: $file\n";
+        }
     }
-}else{
-    echo "Folder Not found";
+} else {
+    echo "Directory '$dFolderName' does not exist.\n";
 }
