@@ -14,7 +14,7 @@ $ticket = null;
 
 
 if ($temp > 0 || $temp < 30){
-    echo "Weather is better. <br>";
+    echo "Weather is Good. <br>";
 }
 else{
     echo "Weather is bad. <br>";
