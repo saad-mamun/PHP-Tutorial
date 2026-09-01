@@ -15,9 +15,6 @@ switch ($grade){
     case "C":
         echo "Fair";
         break;
-    case "D":
-        echo "Poor";
-        break;
     case "F":
         echo "Failing";
         break;
