@@ -2,7 +2,7 @@
 // array
 
 
-$foods = array("Pizza",  "Burger", "Pasta", "Salad", "Fries");
+$foods = array("Pizza",  "Burger", "Pasta", "Salad", "Fries", "Ice Cream", "Sushi", "Steak", "Fish", "Pineapple");
 
 // echo $foods[0] . "<br>";
 // echo $foods[1] . "<br>";
