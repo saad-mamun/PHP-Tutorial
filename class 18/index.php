@@ -8,9 +8,9 @@
 </head>
 <body>
     <form action="index.php" method="post">
-        <input type="text" name="username" placeholder="Enter username"><br>
-        <input type="email" name="email" placeholder="Enter email"><br>
-        <input type="number" name="age" placeholder="Enter age"><br>
+        <input type="text" name="username" placeholder="Enter Username"><br>
+        <input type="email" name="email" placeholder="Enter Email"><br>
+        <input type="number" name="age" placeholder="Enter Age"><br>
         <input type="submit" name="login" value="Login">
     </form>
 </body>
