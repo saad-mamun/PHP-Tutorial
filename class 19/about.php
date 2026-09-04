@@ -15,7 +15,7 @@ include 'header.html';
 
 <body>
     <div>
-        <h1>Include Function</h1>
+        <h1>include Function</h1>
         <p>This is the About page of my website.</p>
     </div>
 </body>
