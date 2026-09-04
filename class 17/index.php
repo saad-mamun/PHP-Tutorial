@@ -1,6 +1,6 @@
 <?php
 
-$username = "Mamun ali";
+$username = "mamun ali";
 
 // $username = strtolower($username);
 $username = strtoupper($username);
