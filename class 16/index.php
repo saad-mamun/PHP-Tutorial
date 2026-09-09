@@ -11,10 +11,10 @@
 
 // parameter 
 function happy_birthday($first_name, $age){
-    echo "Happy Birthday $first_name! <br>";
-    echo "Happy Birthday to $first_name! <br> <br>";
-    echo "Happy Birthday to my dear friend $first_name! <br>";
-    echo "Happy Birthday $first_name! <br>";
+    echo "Happy birthday $first_name! <br>";
+    echo "Happy birthday to $first_name! <br> <br>";
+    echo "Happy birthday to my dear friend $first_name! <br>";
+    echo "Happy birthday $first_name! <br>";
     echo "You are now $age! <br> <br>";
 }
 
