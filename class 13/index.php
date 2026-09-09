@@ -56,7 +56,7 @@ if(isset($_POST['username']) && isset($_POST['password'])){
     }
 
 }else{
-    echo "Please fill in the form"; 
+    echo "Please Fill in the Form"; 
 }
 
 
