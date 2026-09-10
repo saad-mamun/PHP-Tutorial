@@ -13,7 +13,7 @@
 function happy_birthday($first_name, $age){
     echo "Happy birthday $first_name! <br>";
     echo "Happy birthday to $first_name! <br> <br>";
-    echo "Happy birthday to my dear friend $first_name! <br>";
+    echo "Happy birthday to my Dear friend $first_name! <br>";
     echo "Happy birthday $first_name! <br>";
     echo "You are now $age! <br> <br>";
 }
