@@ -3,8 +3,8 @@
 
 
 
-$s = 1;
-while($s <= 5){
-    echo ".$s Practice make perfect \n";
-    $s++;
-}
+$i = 1;
+do{
+    echo "I am liton .$i \n";
+    $i++;
+}while($i <= 10);
