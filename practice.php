@@ -1,10 +1,7 @@
 <?php
 
 
+$colors = ["red", " greed", " blue", " yellow", " pink", " purple", " black", " lime", " ass"];
 
+$blue = $colors[2];
 
-$i = 1;
-do{
-    echo "I am liton .$i \n";
-    $i++;
-}while($i <= 10);
