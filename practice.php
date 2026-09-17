@@ -1,7 +1,8 @@
 <?php
 
 
-$colors = ["red", " greed", " blue", " yellow", " pink", " purple", " black", " lime", " ass"];
+$colors = ["red", "green", "blue", "yellow", "pink", "purple", "black", "lime", "gray"];
 
-$blue = $colors[2];
-
+for ($i = 0; $i <= 4; $i++){
+    echo $colors[$i] . "\n";
+}
