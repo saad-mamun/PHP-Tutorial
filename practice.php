@@ -1,7 +1,7 @@
 <?php
 
 
-$colors = ["red", "green", "blue", "yellow", "pink", "purple", "black", "lime", "gray"];
+$colors = ["red", "green", "blue", "yellow", "gray"];
 
 for ($i = 0; $i <= 4; $i++){
     echo $colors[$i] . "\n";
