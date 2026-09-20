@@ -1,12 +1,17 @@
 <?php
 
 
-$numbers = [1, 2, 3, 4, 5, 6];
+echo "Enter unites you consumed: ";
+$units = (int)readline();
 
-for ($i = 1; $i <= 5; $i++) {
 
-    if ($i == 3) {
-        continue;
-    }
-    echo $i . "\n";
+if ($units <= 100) {
+    $bill = $units * 5;
+} elseif ($units <= 200) {
+    $bill = 100 * 5 + ($units - 100) * 10;
+} elseif ($units > 200) {
+    $bill = (100 * 5) + (100 * 10) + ($units - 200) * 15;
+} else {
+    echo "You can not consumed any unite";
 }
+echo "Your total Bill: $bill";
