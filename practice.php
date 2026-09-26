@@ -1,10 +1,8 @@
 <?php
 
 
-$colors = ["red", "green", "blue", "yellow", "pink", "purple", "black", "lime", "ash"];
-
-
-// echo count($colors);
-for($i = 0; $i < count($colors); $i++){
-    echo $colors[$i] . "\n";
-};
+$i = 1;
+while($i <= 10){
+    echo "I am sorry .$i \n";
+    $i++;
+}
