@@ -2,7 +2,8 @@
 
 
 $i = 1;
-while($i <= 10){
-    echo "I am sorry .$i \n";
+
+do{
+    echo $i .": I am sorry"." \n";
     $i++;
-}
+}while($i <= 5);
