@@ -1,8 +1,9 @@
 <?php
 
 
-// function greeting($name = "Sir"){
-//     echo "Welcome $name";
+// INTIGER NUMBER
+// function sumOfTwoNumbersInt(int $num1, int $num2) : int{
+//     $result = $num1 + $num2;
+//     return $result;
 // }
-//  greeting(); // oi default er name = sir show korebe
-//  greeting("Naima");
+// echo sumOfTwoNumbersInt(30,50); 
