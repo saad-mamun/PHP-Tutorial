@@ -1,9 +1,9 @@
 <?php
 
 
-// INTIGER NUMBER
-// function sumOfTwoNumbersInt(int $num1, int $num2) : int{
+//FLOAT NUMBER
+// function sumOfTwoNumbersInt(float $num1, float $num2) : float{
 //     $result = $num1 + $num2;
 //     return $result;
 // }
-// echo sumOfTwoNumbersInt(30,50); 
+// echo sumOfTwoNumbersInt(30.52,50);
