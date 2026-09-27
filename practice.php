@@ -1,7 +1,8 @@
 <?php
 
 
-function myName($name, $age){
-    echo "My name is $name and I'm $age years old";
-}
-myName("Mamun", 22);
+// function greeting($name = "Sir"){
+//     echo "Welcome $name";
+// }
+//  greeting(); // oi default er name = sir show korebe
+//  greeting("Naima");
