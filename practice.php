@@ -1,9 +1,9 @@
 <?php
 
 
-//FLOAT NUMBER
-// function sumOfTwoNumbersInt( $num1,  $num2) : float | int{
-//     $result = $num1 + $num2;
-//     return $result;
+
+// function typeHintPri( int $a, float $b, string $c ){
+//     $d = $a + $b;
+//     return "$c result is $d \n";
 // }
-// echo sumOfTwoNumbersInt(30,5.60);
+// echo typeHintPri(45,52.05,"Naima's");
