@@ -2,8 +2,9 @@
 
 
 
-// function typeHintPri( int $a, float $b, string $c ){
-//     $d = $a + $b;
-//     return "$c result is $d \n";
+// $staff = "Biplob";
+// function variableScopeGlobal(){
+//     global $staff;
+//     echo "$staff please make a cup of coffee \n" ;
 // }
-// echo typeHintPri(45,52.05,"Naima's");
+// variableScopeGlobal();
