@@ -2,13 +2,5 @@
 
 
 
-//callback function
-
-// function sayHello($name){
-//     return "Hello $name";
-// };
-
-// function greet($callback, $name){
-//     return $callback($name);
-// };
-// echo greet("Say Hello", "Liton");
+// $arrowFn =  fn($x, $y) => $x * $y;
+// echo $arrowFn(50,3);
