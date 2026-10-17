@@ -2,9 +2,13 @@
 
 
 
-// $staff = "Biplob";
-// function variableScopeGlobal(){
-//     global $staff;
-//     echo "$staff please make a cup of coffee \n" ;
-// }
-// variableScopeGlobal();
+//callback function
+
+// function sayHello($name){
+//     return "Hello $name";
+// };
+
+// function greet($callback, $name){
+//     return $callback($name);
+// };
+// echo greet("Say Hello", "Liton");
