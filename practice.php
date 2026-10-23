@@ -1,10 +1,13 @@
 <?php
 
-// function factWithForLoop($n){
-//     $result = 1;
-//     for($i = 1; $i <=$n; $i++){
-//         $result = $result * $i;
+// Recursive function
+
+// function factWithRec($m)
+// {
+//     if ($m === 0) {
+//         return 1;
 //     }
+//     $result = $m * factWithRec($m - 1);
 //     return $result;
 // }
-// echo factWithForLoop(6);
+// echo factWithRec(5);
