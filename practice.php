@@ -1,6 +1,6 @@
 <?php
 
-//callback function
+
 
 // function sayHello($name){
 //     return "Hello $name";
