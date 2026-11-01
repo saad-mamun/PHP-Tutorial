@@ -2,11 +2,8 @@
 
 
 
-// function sayHello($name){
-//     return "Hello $name";
+// $anFun =  function ($x, $y) {
+//     $z = $x * $y;
+//     return $z;
 // };
-
-// function greet($callback, $name){
-//     return $callback($name);
-// };
-// echo greet("Say Hello", "Liton");
+// echo $anFun(2, 5);
