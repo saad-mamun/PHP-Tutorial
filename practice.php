@@ -2,8 +2,5 @@
 
 
 
-// $anFun =  function ($x, $y) {
-//     $z = $x * $y;
-//     return $z;
-// };
-// echo $anFun(2, 5);
+// $arrowFn =  fn($x, $y) => $x * $y;
+// echo $arrowFn(50,3);
