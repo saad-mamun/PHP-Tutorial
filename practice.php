@@ -1,10 +1,4 @@
 <?php
 
-// $name = "Mitu";
-// function grt(){
-//     global $name;
-//     echo "Hello " . $name . "! <br>";
-// }
-// grt();
-// echo "Global Variable " . $name;
-
+//Super Global. Nicher soho aro onk +
+// $_POST, $_GET, $_SERVER,$_SESSION;
