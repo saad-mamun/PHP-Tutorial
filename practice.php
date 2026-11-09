@@ -1,6 +1,10 @@
 <?php
 
+// $name = "Mitu";
+// function grt(){
+//     global $name;
+//     echo "Hello " . $name . "! <br>";
+// }
+// grt();
+// echo "Global Variable " . $name;
 
-
-// $arrowFn =  fn($x, $y) => $x * $y;
-// echo $arrowFn(50,3);
