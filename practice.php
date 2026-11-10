@@ -1,4 +1,9 @@
 <?php
 
-//Super Global. Nicher soho aro onk +
-// $_POST, $_GET, $_SERVER,$_SESSION;
+//Constant
+
+// define("SITE_NAME", "Chaldal");
+// echo SITE_NAME;
+
+// const PI = 3.1416;
+// echo PI;
