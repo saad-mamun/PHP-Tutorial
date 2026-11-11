@@ -1,9 +1,10 @@
 <?php
 
-//Constant
+//Class Constant
+// :: ATAKE BOLE SCOPE Resolutionary  OPARETOR
 
-// define("SITE_NAME", "Chaldal");
-// echo SITE_NAME;
-
-// const PI = 3.1416;
-// echo PI;
+// class Test{
+//     const PI = 3.1416;
+// }
+// echo Test :: PI;
+ 
