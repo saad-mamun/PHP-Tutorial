@@ -1,10 +1,14 @@
 <?php
 
-//Class Constant
-// :: ATAKE BOLE SCOPE Resolutionary  OPARETOR
+// Recursive function
 
-// class Test{
-//     const PI = 3.1416;
+// function factWithRec($m)
+// {
+//     if ($m === 0) {
+//         return 1;
+//     }
+//     $result = $m * factWithRec($m - 1);
+//     return $result;
 // }
-// echo Test :: PI;
+// echo factWithRec(5);
  
