@@ -1,14 +1,11 @@
 <?php
 
 
-//create
+//read
 
-// if(!file_exists($folderName)){
-//     if(mkdir($folderName, 0777, true)){
-//         echo "folder create successfully";
-//     }else {
-//         echo "Failed to create folder" ;
-//     }
+// if(is_dir($folderName)){
+//     $files = scandir($folderName);
+//     print_r($files);
 // }else{
-//     echo "folder already exist";
-// };
+//     echo "Folder dose not exists";
+// }
