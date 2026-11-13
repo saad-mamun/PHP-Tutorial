@@ -1,12 +1,14 @@
 <?php
 
 
-// define("USERNAME", "admin");
-// define("PASSWORD", "2315DF");
+//create
 
-
-// echo "Enter username: ";
-// $inputUsername = readline();
-
-// echo "Enter password: ";
-// $inputPassword = readline();
+// if(!file_exists($folderName)){
+//     if(mkdir($folderName, 0777, true)){
+//         echo "folder create successfully";
+//     }else {
+//         echo "Failed to create folder" ;
+//     }
+// }else{
+//     echo "folder already exist";
+// };
