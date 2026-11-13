@@ -1,12 +1,12 @@
 <?php
 
-//callback function
 
-// function sayHello($name){
-//     return "Hello $name";
-// };
+// define("USERNAME", "admin");
+// define("PASSWORD", "2315DF");
 
-// function greet($callback, $name){
-//     return $callback($name);
-// };
-// echo greet("Say Hello", "Liton");
+
+// echo "Enter username: ";
+// $inputUsername = readline();
+
+// echo "Enter password: ";
+// $inputPassword = readline();
