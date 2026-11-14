@@ -1,11 +1,7 @@
 <?php
 
 
-//read
+//Arrow function
 
-// if(is_dir($folderName)){
-//     $files = scandir($folderName);
-//     print_r($files);
-// }else{
-//     echo "Folder dose not exists";
-// }
+// $arrowFn =  fn($x, $y) => $x * $y;
+// echo $arrowFn(50,3);
