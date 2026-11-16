@@ -121,7 +121,7 @@
 //Arrow function
 
 // $arrowFn =  fn($x, $y) => $x * $y;
-// echo $arrowFn(50,3);
+// echo $arrowFn(50,3); 
 
 
 
