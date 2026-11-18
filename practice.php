@@ -1,12 +1,38 @@
 <?php
 
-//callback function
 
-// function sayHello($name){
-//     return "Hello $name";
-// };
 
-// function greet($callback, $name){
-//     return $callback($name);
-// };
-// echo greet("Say Hello", "Liton");
+$marks = 75;
+
+
+if ($marks >= 80) {
+    echo "A+";
+} elseif ($marks >= 70) {
+    echo "A";
+} elseif ($marks >= 60) {
+    echo "B";
+} else {
+    echo "Unknown grade";
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ ?>
