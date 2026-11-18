@@ -2,17 +2,18 @@
 
 
 
-$marks = 75;
+$marksNested = 67;
 
-
-if ($marks >= 80) {
-    echo "A+";
-} elseif ($marks >= 70) {
-    echo "A";
-} elseif ($marks >= 60) {
-    echo "B";
+if ($marksNested < 33) {
+    echo "You fail";
 } else {
-    echo "Unknown grade";
+    if ($marksNested < 60) {
+        echo "Average";
+    } else {
+        if ($marksNested < 50) {
+            echo "D";
+        }
+    }
 }
 
 
