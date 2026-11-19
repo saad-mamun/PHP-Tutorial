@@ -2,7 +2,7 @@
 
 
 
-// echo "Enter units you consumed: ";
+// echo "Enter units you consumed:  ";
 // $units = (int)readline();
 
 // if ($units <= 100) {
@@ -12,9 +12,9 @@
 // } elseif ($units  > 200) {
 //     $bill = (100 * 5) +  (100 * 10) + ($units - 200) * 15;
 // } else {
-//     echo "You can not consumed any unite";
+//     echo " You can not consumed any unite ";
 // }
-// echo "Your total bill: $$bill";
+// echo  " Your total bill: $$bill ";
 
 
 
