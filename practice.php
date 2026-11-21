@@ -3,11 +3,11 @@
 
 
 
-//Decrement
-// echo "Before Increment : " . $x . "\n";
-// $z = --$x;
-// echo "value of z : " . $z . "\n";
-// echo "After Increment : " . $x . "\n";
+// for loop
+
+// for($i = 1; $i <= 10; $i++){
+//     echo $i . "\n";
+// }
 
 
 
