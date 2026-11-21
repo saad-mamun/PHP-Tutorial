@@ -3,10 +3,9 @@
 
 
 
-// Increment
-// $x = 5;
+//Decrement
 // echo "Before Increment : " . $x . "\n";
-// $z = $x++;
+// $z = --$x;
 // echo "value of z : " . $z . "\n";
 // echo "After Increment : " . $x . "\n";
 
