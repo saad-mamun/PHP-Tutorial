@@ -4,15 +4,13 @@
 
 
 
-
-// While loop
+//Do-While Loop
 
 // $i = 1;
-// while($i <=5){
-//     echo $i. "\n";
+// do{
+//     echo $i ."\n";
 //     $i++;
-// }
-
+// }while($i <=5);
 
 
 
