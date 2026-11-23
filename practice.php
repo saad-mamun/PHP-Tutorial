@@ -4,13 +4,16 @@
 
 
 
-//Do-While Loop
+//Break
+// $numbers = [1, 2, 3, 4, 5, 6];
 
-// $i = 1;
-// do{
-//     echo $i ."\n";
-//     $i++;
-// }while($i <=5);
+// for ($i = 1; $i <= 5; $i++) {
+
+//     if ($i == 3) {
+//         break;
+//     }
+//     echo $i . "\n";
+// }
 
 
 
