@@ -4,16 +4,17 @@
 
 
 
-//Break
-// $numbers = [1, 2, 3, 4, 5, 6];
+//Continue
+$numbers = [1, 2, 3, 4, 5, 6];
 
-// for ($i = 1; $i <= 5; $i++) {
+for ($i = 1; $i <= 5; $i++) {
 
-//     if ($i == 3) {
-//         break;
-//     }
-//     echo $i . "\n";
-// }
+    if ($i == 3) {
+        continue;
+    }
+    echo $i . "\n";
+}
+
 
 
 
