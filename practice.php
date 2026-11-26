@@ -4,17 +4,9 @@
 
 
 
-//Continue
-$numbers = [1, 2, 3, 4, 5, 6];
+$password = "LitonALI123";
 
-for ($i = 1; $i <= 5; $i++) {
-
-    if ($i == 3) {
-        continue;
-    }
-    echo $i . "\n";
-}
-
+$hash = password_hash($password, PASSWORD_DEFAULT);
 
 
 
